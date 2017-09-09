@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Camera
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<img src="image/avatar.png" *ngIf="!image">
+<img src="{{image}}" *ngIf="image">
+  <button ion-button (click)="buttonTapped()">Selfie!</button>
+  <button ion-button (click)="shareTapped()">Share!</button>
+</ion-content>
+
